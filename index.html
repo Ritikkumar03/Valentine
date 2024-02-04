@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
     <title>LOVE LINE</title>
 </head>
-<body>
-    <audio id="backgroundMusic" autoplay loop volume="0.9">
+<body onclick="playAudio()">
+    <audio id="backgroundMusic" loop volume="0.9">
         <source src="kajrasong.mp3" type="audio/mp3">
-        
     </audio>
     <main>
         <video id="bgVideo" autoplay loop muted>
-           
             <source src="lap.mp4" type="video/mp4" media="(min-width: 768px)">
             <source src="mobile.mp4" type="video/mp4">
         </video>
         <div class="question-container">
             <h1>Will you be my Valentine?</h1>
             <div class="button-container">
-                <button onclick="showForm('yes')">Yes</button>
-                <button onclick="showAlertLoop('no')">No</button>
+                <button onclick="playAudio(); showForm('yes')">Yes</button>
+                <button onclick="playAudio(); showAlertLoop('no')">No</button>
             </div>
         </div>
-        
     </main>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        function playAudio() {
+            document.getElementById('backgroundMusic').play();
+            // Remove the onclick attribute to avoid multiple plays on subsequent clicks
+            document.body.removeAttribute('onclick');
+        }
+    </script>
 </body>
 </html>
