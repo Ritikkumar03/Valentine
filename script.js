@@ -13,7 +13,7 @@ function showForm(answer) {
             const confirmResult = confirm(`Whatsapp pr v bata do ki ${place} mai mil sakte hai`);
             if (confirmResult) {
                 const whatsappMessage = encodeURIComponent(`I also love you not just as a friend but as a lover, and please accept me as your G.F. So, Let's meet at ${place}`);
-                window.location.href = `https://wa.me/9310295633?text=${whatsappMessage}`;
+                window.location.href = `https://wa.me/1234565633?text=${whatsappMessage}`;
             }
         }
     }
@@ -32,8 +32,8 @@ function showAlertLoop(answer) {
                 if (confirmResult) {
                     const place = prompt("Great! Please provide the place to make our date special:");
                     if (place) {
-                        const whatsappMessage = encodeURIComponent(`I also love you not just as a friend but as a lover, and please accept me as your G.F. So, Let's meet at ${place}`);
-                        window.location.href = `https://wa.me/9310295633?text=${whatsappMessage}`;
+                        const whatsappMessage = encodeURIComponent(`I also love you too, and Let's meet at ${place}`);
+                        window.location.href = `https://wa.me/1234565633?text=${whatsappMessage}`;
                     }
                 }
             }
@@ -45,7 +45,7 @@ function submitForm() {
     const place = document.getElementById('place').value;
     if (place) {
         const whatsappMessage = encodeURIComponent(`I love you too, and we can meet at ${place}`);
-        window.location.href = `https://wa.me/9310295633?text=${whatsappMessage}`;
+        window.location.href = `https://wa.me/1234565633?text=${whatsappMessage}`;
     }
 }
 
