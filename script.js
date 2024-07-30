@@ -10,10 +10,10 @@ function showForm(answer) {
     if (answer === 'yes') {
         const place = prompt("Great! Please provide the place to make our date special:");
         if (place) {
-            const confirmResult = confirm(`Whatsapp pr v bata do ki ${place} mai hum mil sakte hai`);
+            const confirmResult = confirm(`Toh Whatsapp pr bata do ki ${place} mai hum mil sakte hai`);
             if (confirmResult) {
                 const whatsappMessage = encodeURIComponent(`I also love you and Let's meet at ${place}`);
-                window.location.href = `https://wa.me/1234565633?text=${whatsappMessage}`;
+                window.location.href = `https://wa.me/9310295633?text=${whatsappMessage}`;
             }
         }
     }
@@ -33,7 +33,7 @@ function showAlertLoop(answer) {
                     const place = prompt("Great! Please provide the place to make our date special:");
                     if (place) {
                         const whatsappMessage = encodeURIComponent(`I also love you too, and Let's meet at ${place}`);
-                        window.location.href = `https://wa.me/1234565633?text=${whatsappMessage}`;
+                        window.location.href = `https://wa.me/9310295633?text=${whatsappMessage}`;
                     }
                 }
             }
@@ -45,7 +45,7 @@ function submitForm() {
     const place = document.getElementById('place').value;
     if (place) {
         const whatsappMessage = encodeURIComponent(`I love you too, and we can meet at ${place}`);
-        window.location.href = `https://wa.me/1234565633?text=${whatsappMessage}`;
+        window.location.href = `https://wa.me/9310295633?text=${whatsappMessage}`;
     }
 }
 
